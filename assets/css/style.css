@@ -6,7 +6,7 @@ html, body {
 body {
     width: 100%;
     margin: 0 auto;
-    background-image: url(../img/pexels-lukas-669613.jpg); 
+    background-image: url(../img/pexels-pavel-danilyuk-5858163.jpg); 
     background-size: cover; 
     background-repeat: no-repeat;
 }
@@ -25,54 +25,64 @@ body {
     margin: 15px 0;
 }
 
-main {
-    background-color: rgba(80, 87, 95, 0.8);
+main {  
     margin: 0 auto;
     width: 50%;
-    padding: 45px;
     position: relative;
-    top: 100px;
+    top: 50px;
     border-radius: 10px;
 }
 
-.flex-container {
-    width: 80%;
-    display: flex;
-    flex-direction: row;
+.form {
+    background-color: rgba(181, 93, 4, 0.8);
     margin: 0 auto;
+    width: 100%;
+    padding: 45px;
+    border-radius: 10px; 
 }
 
-  label {
-    margin: 10px 10px 10px 0;
+.flex-container {
+    width: 100%;
+}
+
+label {
     color: #ffffff;
 }
 
 input {
     height: 30px;
-    width: 200px;
-    max-width: 200px;
+    width: 100%;
     border-radius: 5px;
     border: none;
-    margin: 10px auto;
+    margin: 10px 0;
 }
-
-#number-lable {
-margin-left: 15px;
-    clear: both;
-}
-.column1 {
-    flex: 1;
-}
-.column2 {
-    flex: 1;
+input[type="radio"], input[type="checkbox"] {
+    width: 15px;
+    height: auto;
 }
 
 select {
-    width: 200px;
-    margin: 10px auto;
+    width: 100%;
+    margin: 10px 0;
 }
-input[type="radio"] {
-    width: 15px;
-    height: auto;
-    margin: 10px auto;
+
+#checkbox {
+    font-weight: normal;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    width: 100%;
+    color: #ffffff;
+    font-weight: 800;
+    background: #6F4124;
+    height: 50px;
+}
+
+input[type="submit"]:hover {
+    width: 100%;
+    color: #ffffff;
+    font-weight: 800;
+    background: #D6B390;
+    height: 50px;
 }

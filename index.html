@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,21 +9,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
-
 <body>
     <main>
-        <div class="intro">
-            <h1 id="title">Brandon's Beer Survey</h1>
+        <h1 id="title">Brandon's Beer Survey</h1>
+        <div class="form">
             <p id="description">Let me know what kind of beer you like and I'll pair you with some amazing beer that I
                 know you'll love.</p>
-        </div>
-        <form id="survey-form" class="flex-container" action="submit-form.com">
-            <div class="column1">
+            <form id="survey-form" class="flex-container" action="submit-form.com">
                 <label for="name" id="name-label">Full Name</label><br>
                 <input id="name" type="text" placeholder="i.e. John Smith" required><br>
+                <label for="email" id="email-label">Email Address</label><br>
+                <input id="email" type="email" placeholder="i.e. stevejobs123@gmail.com" required><br>
                 <label for="number" id="number-label">Age (optional)</label><br>
-                <input id="number" type="number" max="105" min="21" placeholder="21 and over only"><br>
+                <input id="number" type="number" max="105" min="21" placeholder="21 and over only"><br> 
                 <label for="tastes">A Beer Tastes Best When It's...</label><br>
                 <input type="radio" id="hoppy" name="beer_profile" value="Hoppy">
                 <label for="hoppy">Hoppy</label><br>
@@ -32,14 +31,9 @@
                 <label for="hoppy">Dank</label><br>
                 <input type="radio" id="chocolate" name="beer_profile" value="Chocolatety">
                 <label for="hoppy">Chocolatety</label><br>
-                <button>Submit</button>
-            </div>
-            <div class="column2">
-                <label for="email" id="email-label">Email Address</label><br>
-                <input id="email" type="email" placeholder="i.e. stevejobs123@gmail.com" required>
-                <br><label for="dropdown" id="beer-style-label">What's Your Favorite Kinds of Beer</label><br>
-                <select id="dropdown" multiple="multiple"> 
-                    <option value="">Select One</option>
+                <label for="dropdown" id="beer-style-label">What's Your Favorite Kinds of Beer</label><br>
+                <select id="dropdown" multiple="multiple">
+                    <option value="">Select All That Apply</option>
                     <option value="IPAs">IPAs</option>
                     <option value="Stouts">Stouts</option>
                     <option value="Belgiums">Belgiums</option>
@@ -47,8 +41,22 @@
                     <option value="Porters">Porters</option>
                     <option value="Sours">Sours</option>
                 </select><br>
-            </div>
-        </form>
+                <p id="checkbox">Where do You Like to Drink Beer?</p>
+                <input type="checkbox" id="favorite_venues1" name="favorite_venues1" value="Breweries">
+                <label for="favorite_venues1">Breweries</label><br>
+                <input type="checkbox" id="favorite_venues2" name="favorite_venues2" value="Bottle Shops">
+                <label for="favorite_venues2">Bottle Shops</label><br>
+                <input type="checkbox" id="favorite_venues3" name="favorite_venues3" value="Bars">
+                <label for="favorite_venues3">Bars</label><br>
+                <input type="checkbox" id="favorite_venues3" name="favorite_venues3" value="Bars">
+                <label for="favorite_venues3">Bars</label><br>
+                <label for="additonalcomments">What else would you like us to know about your beer preference?</label>
+                <textarea id="additonalcomments" name="additonalcomments" rows="4" cols="75">
+
+                </textarea>
+                <input id="submit" type="submit" value="Submit">
+            </form>
+        </div>
     </main>
 </body>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
