@@ -9,6 +9,7 @@ body {
     background-image: url(../img/pexels-pavel-danilyuk-5858163.jpg); 
     background-size: cover; 
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 #title {
@@ -29,7 +30,8 @@ main {
     margin: 0 auto;
     width: 50%;
     position: relative;
-    top: 50px;
+
+    top: 0;
     border-radius: 10px;
 }
 
@@ -85,4 +87,8 @@ input[type="submit"]:hover {
     font-weight: 800;
     background: #D6B390;
     height: 50px;
+}
+
+#additonalcomments {
+    max-width: 100%;
 }
